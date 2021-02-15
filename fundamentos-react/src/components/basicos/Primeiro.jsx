@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Primeiro() {
+export default _ => {
     
     const msg = 'Seja Bem-vindo(a)'
 
@@ -10,4 +10,5 @@ export default function Primeiro() {
             <p>{ msg }</p>
         </div>
     )
+
 }
