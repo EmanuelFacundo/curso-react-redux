@@ -12,6 +12,7 @@ import ListaAlunos from './components/repeticao/ListaAlunos'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
 
 
 export default _ => (
@@ -21,11 +22,15 @@ export default _ => (
 
         <div className = 'Cards'>
 
-            <Card titulo = '#9 - Comunição Direta' color = "#FF18">
+            <Card titulo = '#10 - Comunição Indireta' color = "#32CD32">
+                <IndiretaPai />
+            </Card>
+
+            <Card titulo = '#9 - Comunição Direta' color = "#A0522D">
                 <DiretaPai />
             </Card>
             
-            <Card titulo = '#8 - Renderização Condicional' color = "#F07818">
+            <Card titulo = '#8 - Renderização Condicional' color = "#0000CD">
                 <UsuarioInfo usuario = {{ nome: 'Emanuel' }}/>
                 <UsuarioInfo usuario = {{ email: 'Emanuel' }}/>
             </Card>
