@@ -15,6 +15,8 @@ import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Input from './components/formulario/Input'
 import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
+
 
 export default _ => (
     <div className = 'App'>
@@ -23,6 +25,10 @@ export default _ => (
 
         <div className = 'Cards'>
             
+            <Card titulo = '#13 - Desafio Mega Sena' color = "#FFFF00">
+                <Mega />
+            </Card>
+
             <Card titulo = '#12 - Contador' color = "#FF69B4">
                 <Contador valorInicial = {100}/>
             </Card>

@@ -1,0 +1,14 @@
+.Mega button{
+    border-radius: 20px;
+    background-color: #51f803;
+    color: #000;
+}
+
+.Mega input{
+    width: 50px;
+    border-radius: 20px;
+}
+
+.Mega strong{
+    font-size: 1rem;
+}
