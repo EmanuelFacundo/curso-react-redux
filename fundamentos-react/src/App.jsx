@@ -14,6 +14,7 @@ import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/DiretaPai'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import Input from './components/formulario/Input'
+import Contador from './components/contador/Contador'
 
 export default _ => (
     <div className = 'App'>
@@ -21,6 +22,10 @@ export default _ => (
         <h1>Fundamentos React</h1>
 
         <div className = 'Cards'>
+            
+            <Card titulo = '#12 - Contador' color = "#FF69B4">
+                <Contador valorInicial = {100}/>
+            </Card>
 
             <Card titulo = '#11 - Componente controlado' color = "#FF69B4">
                 <Input />
