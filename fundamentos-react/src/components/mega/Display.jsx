@@ -32,7 +32,7 @@ export default props => {
             <span>{numeros.join(' ')}</span>
             <div>
                 <strong>Qtde de números:</strong>
-                <input type="number" value = {qtde} 
+                <input type="number"  
                     onChange = {e => setQtde(+e.target.value) }  />
                 <div>
                     <button onClick = {_=> setNumeros(gerarNumeros(qtde))}><strong>GERAR</strong></button>
