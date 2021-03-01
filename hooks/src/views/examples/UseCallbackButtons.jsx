@@ -1,8 +1,8 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 
 const UseCallbackButtons = props => {
 
-
+    console.log('asd')
     return(
         <div>
             <button className="btn" onClick={() => props.inc(6)}>+6</button>
