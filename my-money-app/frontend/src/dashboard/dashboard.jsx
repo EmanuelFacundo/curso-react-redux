@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import { toastr } from 'react-redux-toastr'
 
 import { getSummary } from './DashboardActions'
 import ContentHeader from '../common/template/ContentHeader'
@@ -17,18 +18,18 @@ class Dashboard extends Component {
     render() {
 
         const { credit, debt } = this.props.summary
-
+        
         return(
             <div>
                 <ContentHeader tittle='Dashboard' small='Version 1.0'/>
                 <Content>
                     <Row>
                         <ValueBox cols='12 4' color='green' icon='bank'
-                            value={`R$ ${credit}`} text='Total de Créditos'/>
+                            value={`R$ ${credit.toFixed(2)}`} text='Total de Créditos'/>
                         <ValueBox cols='12 4' color='red' icon='credit-card'
-                            value={`R$ ${debt}`} text='Total de Débitos'/>
+                            value={`R$ ${debt.toFixed(2)}`} text='Total de Débitos'/>
                         <ValueBox cols='12 4' color='blue' icon='money'
-                            value={`R$ ${credit - debt}`} text='Valor Consolidado'/>
+                            value={`R$ ${(credit - debt).toFixed(2)}`} text='Valor Consolidado'/>
                     </Row>
                 </Content>
             </div>
